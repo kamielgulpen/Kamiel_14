@@ -108,6 +108,11 @@ var popup22 = new mapboxgl.Popup({ offset: 50 }) // add popups
 var popup23 = new mapboxgl.Popup({ offset: 50 }) // add popups
 .setHTML('<h3> Weird in Weert </h3> <p>Je zou zo vergeten dat we ook in Weert zijn geweest. Ik moet er nog om lachen als ik er aan denk met de feest tent, het auto ongeluk, de mooie beloofde natuur die niet te vinden was en natuurlijk eht 65+ menu.<p><img src="Weert.jpeg" alt="" width="100%">')
 
+
+
+var popup24 = new mapboxgl.Popup({ offset: 50 }) // add popups
+.setHTML('<h3> Egeljacht</h3> <p>We gaan op egel jacht we gaan op echel jacht en we zoeken ze tussen de bladeren, we horen ze naderen<p><img src="Egeljacht.jpeg" alt="" width="100%">')
+
 const nav = new mapboxgl.NavigationControl()
   map.addControl(nav)
 
@@ -257,6 +262,13 @@ function setupMap(center){
       .setLngLat([5.710260, 51.252022])
       .setPopup(popup23)
       .addTo(map);
+
+    //Bunnik
+    var marker = new mapboxgl.Marker()
+      .setLngLat([5.219869, 52.043968])
+      .setPopup(popup24)
+      .addTo(map);
+
       
       
 
